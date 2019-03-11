@@ -1,57 +1,76 @@
 digraph iogames {
     labelloc="t";
-    label="History of .io games\nby Julien Mourer";
+    label=<<u><b>History of .io games</b></u><br/>by <b>Julien Mourer</b><br/>Licensed under the CC BY 4.0>;
 
 	{
 		node [shape=none, color=white, fillcolor=white, fontsize=20, height=.5];
 		edge [style=invis]
 
-		2014 -> 2015;
-		2015 -> 2016;
-		2016 -> 2017;
-		2017 -> 2018;
-		2018 -> 2019;
+		{ "2014q4" [label="Q4 2014"] }
+		{ "2015q1" [label="Q1 2015"] }
+		{ "2015q2" [label="Q2 2015"] }
+		{ "2015q3" [label="Q3 2015"] }
+		{ "2015q4" [label="Q4 2015"] }
+		{ "2016q1" [label="Q1 2016"] }
+		{ "2016q2" [label="Q2 2016"] }
+		{ "2016q3" [label="Q3 2016"] }
+		{ "2016q4" [label="Q4 2016"] }
+		{ "2017q1" [label="Q1 2017"] }
+		{ "2017q2" [label="Q2 2017"] }
+		{ "2017q3" [label="Q3 2017"] }
+		{ "2017q4" [label="Q4 2017"] }
+		{ "2018q1" [label="Q1 2018"] }
+		{ "2018q2" [label="Q2 2018"] }
+		{ "2018q3" [label="Q3 2018"] }
+		{ "2018q4" [label="Q4 2018"] }
+
+		"2014q4" ->
+		"2015q1" -> "2015q2" -> "2015q3" -> "2015q4" ->
+		"2016q1" -> "2016q2" -> "2016q3" -> "2016q4" ->
+		"2017q1" -> "2017q2" -> "2017q3" -> "2017q4" ->
+		"2018q1" -> "2018q2" -> "2018q3" -> "2018q4";
 	}
 
 	{
 		node [color="#90caf9", style="rounded, filled", shape=box];
-		{ rank=same; 2014; "cursors.io" [label="\N\nMatheus Valadares"] }
-		{ rank=same; 2015; "agar.io" [label="\N\nMatheus Valadares"] } /* https://en.wikipedia.org/wiki/Agar.io */
-		{ rank=same; 2016; "slither.io" [label="\N\nSteve Howse"] } /* https://en.wikipedia.org/wiki/Slither.io */
-		{ rank=same; 2016; "diep.io" [label="\N\nMatheus Valadares"] }
-		{ rank=same; 2016; "deeeep.io" }
-		{ rank=same; 2016; "mope.io" }
-		{ rank=same; 2016; "wormax.io" [label="\N\nElyland"] }
-		{ rank=same; 2016; "wormate.io" [label="\N\nOleksandr Godoba"] }
-		{ rank=same; 2016; "limax.io" [label="\N\nLapaMauve"] }
-		{ rank=same; 2016; "wilds.io" [label="\N\nRezoner"] }
-		{ rank=same; 2016; "wings.io" }
-		{ rank=same; 2016; "paper.io" [label="\N\nVoodoo"] }
-		{ rank=same; 2016; "splix.io" [label="\N\nJesper"] }
-		{ rank=same; 2016; "krew.io" [label="\N\nM0dE"] }
-		{ rank=same; 2017; "powerline.io" }
-		{ rank=same; 2017; "spinz.io" [label="\N\nYang Lui"] }
-		{ rank=same; 2017; "stabby.io" [label="\N\nArcan"] }
-		{ rank=same; 2017; "foes.io" [label="\N\nSydney de Vries"] }
-		{ rank=same; 2017; "zombs.io" [label="\N\nYang Lui"] }
-		{ rank=same; 2017; "moomoo.io" [label="\N\nSydney de Vries"] }
-		{ rank=same; 2017; "starve.io" [label="\N\nLapaMauve"] }
-		{ rank=same; 2017; "surviv.io" [label="\N\nJustin Kim & Nick Clark"] } /* https://en.wikipedia.org/wiki/Surviv.io */
-		{ rank=same; 2017; "doomed.io" [label="\N\nGinoda"] }
-		{ rank=same; 2017; "nightpoint.io" [label="\N\nSarunas"] }
-		{ rank=same; 2017; "bruh.io" [label="\N\nBitfox Games"] }
-		{ rank=same; 2017; "wanderers.io" [label="\N\nRezoner"] }
-		{ rank=same; 2017; "brutal.io" }
-		{ rank=same; 2017; "hexar.io" }
-		{ rank=same; 2017; "superhex.io" }
-		{ rank=same; 2017; "pie.ai" }
-		{ rank=same; 2018; "devast.io" [label="\N\nLapaMauve"] }
-		{ rank=same; 2018; "krunker.io" [label="\N\nSydney de Vries"] }
-		{ rank=same; 2018; "zombsroyale.io" [label="\N\nYang Lui"] }
-		{ rank=same; 2018; "doomed2.io" [label="\N\nGinoda"] }
-		{ rank=same; 2018; "battlepoint.io" [label="\N\nSarunas"] }
-		{ rank=same; 2018; "buildroyale.io" [label="\N\nMathew Matakovic"] }
-		{ rank=same; 2018; "tanksmith.io" [label="\N\nIO Ninja"] }
+		{ rank=same; "2014q4"; "cursors.io" [label="\N\nMatheus Valadares"] }
+		{ rank=same; "2015q2"; "agar.io" [label="\N\nMatheus Valadares"] } /* https://en.wikipedia.org/wiki/Agar.io */
+		{ rank=same; "2016q1"; "slither.io" [label="\N\nSteve Howse"] } /* https://en.wikipedia.org/wiki/Slither.io */
+		{ rank=same; "2016q1"; "diep.io" [label="\N\nMatheus Valadares"] }
+		{ rank=same; "2016q1"; "wings.io" }
+		{ rank=same; "2016q2"; "limax.io" [label="\N\nLapaMauve"] }
+		{ rank=same; "2016q2"; "wilds.io" [label="\N\nRezoner"] }
+		{ rank=same; "2016q3"; "wormax.io" [label="\N\nElyland"] }
+		{ rank=same; "2016q4"; "deeeep.io" }
+		{ rank=same; "2016q4"; "mope.io" [label="\N\nStan Tatarnykov"] }
+		{ rank=same; "2016q4"; "wormate.io" [label="\N\nOleksandr Godoba"] }
+		{ rank=same; "2016q2"; "paper.io" [label="\N\nVoodoo"] }
+		{ rank=same; "2016q3"; "splix.io" [label="\N\nJesper"] }
+		{ rank=same; "2016q4"; "krew.io" [label="\N\nM0dE"] }
+		{ rank=same; "2017q1"; "brutal.io" }
+		{ rank=same; "2017q1"; "hexar.io" }
+		{ rank=same; "2017q1"; "pie.ai" }
+		{ rank=same; "2017q1"; "moomoo.io" [label="\N\nSydney de Vries"] }
+		{ rank=same; "2017q1"; "starve.io" [label="\N\nLapaMauve"] }
+		{ rank=same; "2017q2"; "stabby.io" [label="\N\nArcan"] }
+		{ rank=same; "2017q2"; "zombs.io" [label="\N\nYang Lui"] }
+		{ rank=same; "2017q2"; "spinz.io" [label="\N\nYang Lui"] }
+		{ rank=same; "2017q2"; "superhex.io" }
+		{ rank=same; "2017q3"; "foes.io" [label="\N\nSydney de Vries"] }
+		{ rank=same; "2017q3"; "surviv.io" [label="\N\nJustin Kim & Nick Clark"] } /* https://en.wikipedia.org/wiki/Surviv.io */
+		{ rank=same; "2017q3"; "nightpoint.io" [label="\N\nSarunas"] }
+		{ rank=same; "2017q4"; "powerline.io" }
+		{ rank=same; "2017q4"; "doomed.io" [label="\N\nGinoda"] }
+		{ rank=same; "2017q4"; "bruh.io" [label="\N\nBitfox Games"] }
+		{ rank=same; "2017q4"; "wanderers.io" [label="\N\nRezoner"] }
+		{ rank=same; "2017q4"; "shellshock.io" }
+		{ rank=same; "2018q1"; "zombsroyale.io" [label="\N\nYang Lui"] }
+		{ rank=same; "2018q1"; "doomed2.io" [label="\N\nGinoda"] }
+		{ rank=same; "2018q2"; "tanksmith.io" [label="\N\nIO Ninja"] }
+		{ rank=same; "2018q2"; "krunker.io" [label="\N\nSydney de Vries"] }
+		{ rank=same; "2018q3"; "devast.io" [label="\N\nLapaMauve"] }
+		{ rank=same; "2018q3"; "battlepoint.io" [label="\N\nSarunas"] }
+		{ rank=same; "2018q4"; "buildroyale.io" [label="\N\nMathew Matakovic"] }
 
 		"slither.io" -> "wormax.io";
 		"slither.io" -> "wormate.io";
@@ -78,6 +97,7 @@ digraph iogames {
 		"diep.io" -> "tanksmith.io"
 		"deeeep.io" -> "mope.io"
 		"mope.io" -> "moomoo.io"
+		"shellshock.io" -> "krunker.io"
 	}
 }
 
