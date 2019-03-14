@@ -37,7 +37,7 @@ digraph iogames {
 		{ rank=same; "2015q2"; "agar.io" [label="\N\nMatheus Valadares"] } /* https://en.wikipedia.org/wiki/Agar.io */
 		{ rank=same; "2016q1"; "slither.io" [label="\N\nSteve Howse"] } /* https://en.wikipedia.org/wiki/Slither.io */
 		{ rank=same; "2016q1"; "diep.io" [label="\N\nMatheus Valadares"] }
-		{ rank=same; "2016q1"; "wings.io" }
+		{ rank=same; "2016q1"; "wings.io" [label="\N\nAndre Almeida"] }
 		{ rank=same; "2016q2"; "limax.io" [label="\N\nLapaMauve"] }
 		{ rank=same; "2016q2"; "wilds.io" [label="\N\nRezoner"] }
 		{ rank=same; "2016q3"; "wormax.io" [label="\N\nElyland"] }
@@ -46,12 +46,14 @@ digraph iogames {
 		{ rank=same; "2016q4"; "wormate.io" [label="\N\nOleksandr Godoba"] }
 		{ rank=same; "2016q2"; "paper.io" [label="\N\nVoodoo"] }
 		{ rank=same; "2016q3"; "splix.io" [label="\N\nJesper"] }
+		{ rank=same; "2016q3"; "drawthis.io" }
 		{ rank=same; "2016q4"; "krew.io" [label="\N\nM0dE"] }
-		{ rank=same; "2017q1"; "brutal.io" }
+		{ rank=same; "2017q1"; "brutal.io" [label="\N\nAndre Almeida"] }
 		{ rank=same; "2017q1"; "hexar.io" }
 		{ rank=same; "2017q1"; "pie.ai" }
 		{ rank=same; "2017q1"; "moomoo.io" [label="\N\nSydney de Vries"] }
 		{ rank=same; "2017q1"; "starve.io" [label="\N\nLapaMauve"] }
+		{ rank=same; "2017q1"; "skribbl.io" }
 		{ rank=same; "2017q2"; "stabby.io" [label="\N\nArcan"] }
 		{ rank=same; "2017q2"; "zombs.io" [label="\N\nYang Lui"] }
 		{ rank=same; "2017q2"; "spinz.io" [label="\N\nYang Lui"] }
@@ -59,14 +61,16 @@ digraph iogames {
 		{ rank=same; "2017q3"; "foes.io" [label="\N\nSydney de Vries"] }
 		{ rank=same; "2017q3"; "surviv.io" [label="\N\nJustin Kim & Nick Clark"] } /* https://en.wikipedia.org/wiki/Surviv.io */
 		{ rank=same; "2017q3"; "nightpoint.io" [label="\N\nSarunas"] }
-		{ rank=same; "2017q4"; "powerline.io" }
+		{ rank=same; "2017q4"; "powerline.io" [label="\N\nAndre Almeida"] }
 		{ rank=same; "2017q4"; "doomed.io" [label="\N\nGinoda"] }
 		{ rank=same; "2017q4"; "bruh.io" [label="\N\nBitfox Games"] }
 		{ rank=same; "2017q4"; "wanderers.io" [label="\N\nRezoner"] }
 		{ rank=same; "2017q4"; "shellshock.io" }
+		{ rank=same; "2017q4"; "airma.sh" }
 		{ rank=same; "2018q1"; "zombsroyale.io" [label="\N\nYang Lui"] }
 		{ rank=same; "2018q1"; "doomed2.io" [label="\N\nGinoda"] }
 		{ rank=same; "2018q2"; "tanksmith.io" [label="\N\nIO Ninja"] }
+		{ rank=same; "2018q2"; "drawthis2.io" [label="\N\nlagged.com"] }
 		{ rank=same; "2018q2"; "krunker.io" [label="\N\nSydney de Vries"] }
 		{ rank=same; "2018q3"; "devast.io" [label="\N\nLapaMauve"] }
 		{ rank=same; "2018q3"; "battlepoint.io" [label="\N\nSarunas"] }
@@ -75,29 +79,32 @@ digraph iogames {
 		"slither.io" -> "wormax.io";
 		"slither.io" -> "wormate.io";
 		"slither.io" -> "limax.io";
-		"moomoo.io" -> "foes.io"
-		"moomoo.io" -> "doomed.io"
-		"moomoo.io" -> "starve.io"
-		"moomoo.io" -> "surviv.io"
-		"doomed.io" -> "doomed2.io"
-		"nightpoint.io" -> "battlepoint.io"
-		"nightpoint.io" -> "bruh.io"
-		"bruh.io" -> "battlepoint.io"
-		"zombs.io" -> "zombsroyale.io"
-		"moomoo.io" -> "zombs.io"
-		"zombsroyale.io" -> "buildroyale.io"
-		"wilds.io" -> "wanderers.io"
-		"agar.io" -> "spinz.io"
-		"agar.io" -> "pie.ai"
-		"starve.io" -> "devast.io"
-		"paper.io" -> "splix.io"
-		"splix.io" -> "hexar.io"
-		"hexar.io" -> "superhex.io"
-		"agar.io" -> "deeeep.io"
-		"diep.io" -> "tanksmith.io"
-		"deeeep.io" -> "mope.io"
-		"mope.io" -> "moomoo.io"
-		"shellshock.io" -> "krunker.io"
+		"slither.io" -> "powerline.io";
+		"moomoo.io" -> "foes.io";
+		"moomoo.io" -> "doomed.io";
+		"moomoo.io" -> "starve.io";
+		"moomoo.io" -> "surviv.io";
+		"doomed.io" -> "doomed2.io";
+		"nightpoint.io" -> "battlepoint.io";
+		"nightpoint.io" -> "bruh.io";
+		"bruh.io" -> "battlepoint.io";
+		"zombs.io" -> "zombsroyale.io";
+		"moomoo.io" -> "zombs.io";
+		"zombsroyale.io" -> "buildroyale.io";
+		"wilds.io" -> "wanderers.io";
+		"agar.io" -> "spinz.io";
+		"agar.io" -> "pie.ai";
+		"starve.io" -> "devast.io";
+		"paper.io" -> "splix.io";
+		"splix.io" -> "hexar.io";
+		"hexar.io" -> "superhex.io";
+		"agar.io" -> "deeeep.io";
+		"diep.io" -> "tanksmith.io";
+		"deeeep.io" -> "mope.io";
+		"mope.io" -> "moomoo.io";
+		"shellshock.io" -> "krunker.io";
+		"drawthis.io" -> "skribbl.io";
+		"drawthis.io" -> "drawthis2.io";
 	}
 }
 
