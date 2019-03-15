@@ -35,8 +35,8 @@ digraph iogames {
 		node [color="#90caf9", style="rounded, filled", shape=box];
 
 		{ rank=same; "2014q4"; "cursors.io" [label="\N\nMatheus Valadares"] }
-		{ rank=same; "2015q2"; "agar.io" [label="\N\nMatheus Valadares"] } /* https://en.wikipedia.org/wiki/Agar.io */
-		{ rank=same; "2016q1"; "slither.io" [label="\N\nSteve Howse"] } /* https://en.wikipedia.org/wiki/Slither.io */
+		{ rank=same; "2015q2"; "agar.io" [label="\N\nMatheus Valadares"] } // https://en.wikipedia.org/wiki/Agar.io
+		{ rank=same; "2016q1"; "slither.io" [label="\N\nSteve Howse"] } // https://en.wikipedia.org/wiki/Slither.io
 		{ rank=same; "2016q1"; "diep.io" [label="\N\nMatheus Valadares"] }
 		{ rank=same; "2016q1"; "wings.io" [label="\N\nAndre Almeida"] }
 		{ rank=same; "2016q2"; "limax.io" [label="\N\nLapaMauve"] }
@@ -67,56 +67,63 @@ digraph iogames {
 		{ rank=same; "2017q2"; "superhex.io" }
 		{ rank=same; "2017q3"; "goons.io" [label="\N\nClown Games"] }
 		{ rank=same; "2017q3"; "foes.io" [label="\N\nSydney de Vries"] }
-		{ rank=same; "2017q3"; "surviv.io" [label="\N\nJustin Kim & Nick Clark"] } /* https://en.wikipedia.org/wiki/Surviv.io */
 		{ rank=same; "2017q3"; "nightpoint.io" [label="\N\nSarunas"] }
 		{ rank=same; "2017q4"; "powerline.io" [label="\N\nAndre Almeida"] }
 		{ rank=same; "2017q4"; "doomed.io" [label="\N\nGinoda"] }
-		{ rank=same; "2017q4"; "bruh.io" [label="\N\nBitfox Games"] }
 		{ rank=same; "2017q4"; "wanderers.io" [label="\N\nRezoner"] }
 		{ rank=same; "2017q4"; "shellshock.io" }
 		{ rank=same; "2017q4"; "warscrap.io" [label="\N\nEvil Noob"] }
 		{ rank=same; "2017q4"; "airma.sh" }
 		{ rank=same; "2018q1"; "shootem.io" [label="\N\nMathew Matakovic"] }
-		{ rank=same; "2018q1"; "zombsroyale.io" [label="\N\nYang Lui"] }
 		{ rank=same; "2018q1"; "knuckol.club" [label="\N\nErigato"] }
 		{ rank=same; "2018q1"; "doomed2.io" [label="\N\nGinoda"] }
-		{ rank=same; "2018q2"; "skyroyale.io" [label="\N\nClown Games"] }
 		{ rank=same; "2018q2"; "tanksmith.io" [label="\N\nIO Ninja"] }
 		{ rank=same; "2018q2"; "drawthis2.io" [label="\N\nlagged.com"] }
 		{ rank=same; "2018q2"; "krunker.io" [label="\N\nSydney de Vries"] }
 		{ rank=same; "2018q3"; "devast.io" [label="\N\nLapaMauve"] }
-		{ rank=same; "2018q3"; "battlepoint.io" [label="\N\nSarunas"] }
-		{ rank=same; "2018q4"; "buildroyale.io" [label="\N\nMathew Matakovic"] }
-
-		"slither.io" -> "wormax.io";
-		"slither.io" -> "wormate.io";
-		"slither.io" -> "limax.io";
-		"slither.io" -> "powerline.io";
-		"deeeep.io" -> "oceanar.io";
-		"deeeep.io" -> "mope.io" -> "moomoo.io";
-		"moomoo.io" -> "foes.io";
-		"moomoo.io" -> "doomed.io" -> "doomed2.io";
-		"moomoo.io" -> "starve.io" -> "devast.io";
-		"moomoo.io" -> "surviv.io";
-		"moomoo.io" -> "zombs.io" -> "zombsroyale.io" -> "buildroyale.io";
-		"nightpoint.io" -> "battlepoint.io";
-		"nightpoint.io" -> "bruh.io";
-		"nightpoint.io" -> "shootem.io";
-		"bruh.io" -> "battlepoint.io";
-		"wilds.io" -> "wanderers.io";
-		"agar.io" -> "spinz.io" -> "fisp.io";
-		"spinz.io" -> "superspin.io";
-		"agar.io" -> "pie.ai";
-		"splix.io" -> "paper.io" -> "hexar.io" -> "superhex.io";
-		"agar.io" -> "deeeep.io";
-		"diep.io" -> "tanksmith.io";
-		"warscrap.io" -> "krunker.io";
-		"shellshock.io" -> "krunker.io";
-		"drawthis.io" -> "skribbl.io";
-		"drawthis.io" -> "drawthis2.io";
-		"narwhale.io" -> "pikes.io" -> "goons.io";
-		"goons.io" -> "knuckol.club"; // confirmed to me by Erigato over Discord
-		"airma.sh" -> "skyroyale.io";
-		// Erigato says Yang tweeted that he should hop into making battle royale games like surviv, but I haven't been able to find the tweet so I'm not adding this relationship yet. It's good to know that this is probable though.
 	}
+
+	{
+		/* Battle royale */
+		node [color="#fff176", style="rounded, filled", shape=box];
+
+		{ rank=same; "2017q3"; "surviv.io" [label="\N\nJustin Kim & Nick Clark"] } // https://en.wikipedia.org/wiki/Surviv.io
+		{ rank=same; "2017q4"; "bruh.io" [label="\N\nBitfox Games"] }
+		{ rank=same; "2018q1"; "zombsroyale.io" [label="\N\nYang Lui"] }
+		{ rank=same; "2018q2"; "skyroyale.io" [label="\N\nClown Games"] }
+		{ rank=same; "2018q3"; "battlepoint.io" [label="\N\nSarunas"] }
+		{ rank=same; "2018q4"; "buildroyale.io" [label="\N\nMathew Matakovic"] } // Mathew over Discord: "Build Royale was inspired by Creative Destruction"
+	}
+
+	"slither.io" -> "wormax.io";
+	"slither.io" -> "wormate.io";
+	"slither.io" -> "limax.io";
+	"slither.io" -> "powerline.io";
+	"deeeep.io" -> "oceanar.io";
+	"deeeep.io" -> "mope.io" -> "moomoo.io";
+	"moomoo.io" -> "foes.io";
+	"moomoo.io" -> "doomed.io" -> "doomed2.io";
+	"moomoo.io" -> "starve.io" -> "devast.io";
+	"moomoo.io" -> "surviv.io";
+	"moomoo.io" -> "zombs.io" -> "zombsroyale.io";
+	"nightpoint.io" -> "battlepoint.io";
+	"nightpoint.io" -> "bruh.io";
+	"nightpoint.io" -> "shootem.io";
+	"bruh.io" -> "battlepoint.io";
+	"wilds.io" -> "wanderers.io";
+	"agar.io" -> "spinz.io" -> "fisp.io";
+	"spinz.io" -> "superspin.io";
+	"agar.io" -> "pie.ai";
+	"splix.io" -> "paper.io";
+	"splix.io" -> "hexar.io" -> "superhex.io";
+	"agar.io" -> "deeeep.io";
+	"diep.io" -> "tanksmith.io";
+	"warscrap.io" -> "krunker.io";
+	"shellshock.io" -> "krunker.io";
+	"drawthis.io" -> "skribbl.io";
+	"drawthis.io" -> "drawthis2.io";
+	"narwhale.io" -> "pikes.io" -> "goons.io";
+	"goons.io" -> "knuckol.club"; // confirmed to me by Erigato over Discord
+	"airma.sh" -> "skyroyale.io";
+	// Erigato says Yang tweeted that he should hop into making battle royale games like surviv, but I haven't been able to find the tweet so I'm not adding this relationship yet. It's good to know that this is probable though.
 }

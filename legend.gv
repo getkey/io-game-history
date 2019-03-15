@@ -1,0 +1,12 @@
+digraph legend {
+	labelloc=t;
+    label=<<b>Legend</b>>;
+
+	a [style=invis]
+	b [style=invis];
+
+	".io game" [color="#90caf9", style="rounded, filled", shape=box];
+	"battle royale .io game" [color="#fff176", style="rounded, filled", shape=box];
+
+	a -> b [label="gameplay \"inspiration\""];
+}
