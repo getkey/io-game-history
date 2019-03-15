@@ -1,6 +1,7 @@
 digraph legend {
 	labelloc=t;
     label=<<b>Legend</b>>;
+	rankdir=LR;
 
 	a [style=invis]
 	b [style=invis];
