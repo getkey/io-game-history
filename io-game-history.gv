@@ -59,7 +59,7 @@ digraph iogames {
 		{ rank=same; "2017q1"; "moomoo.io" [label="\N\nSydney de Vries"] }
 		{ rank=same; "2017q1"; "starve.io" [label="\N\nLapaMauve"] }
 		{ rank=same; "2017q1"; "skribbl.io" }
-		{ rank=same; "2017q2"; "stabby.io" [label="\N\nArcan"] }
+		{ rank=same; "2017q2"; "stabby.io" [label="\N\nSoulFoam"] }
 		{ rank=same; "2017q2"; "zombs.io" [label="\N\nYang Lui"] }
 		{ rank=same; "2017q2"; "spinz.io" [label="\N\nYang Lui"] }
 		{ rank=same; "2017q2"; "superspin.io" [label="\N\nJetti Games"] }
