@@ -23,12 +23,19 @@ digraph iogames {
 		{ "2018q2" [label="Q2 2018"] }
 		{ "2018q3" [label="Q3 2018"] }
 		{ "2018q4" [label="Q4 2018"] }
+		{ "2019q1" [label="Q1 2019"] }
+		{ "2019q2" [label="Q2 2019"] }
+		{ "2019q3" [label="Q3 2019"] }
+		{ "2019q4" [label="Q4 2019"] }
+		{ "2020q1" [label="Q1 2020"] }
 
 		"2014q4" ->
 		"2015q1" -> "2015q2" -> "2015q3" -> "2015q4" ->
 		"2016q1" -> "2016q2" -> "2016q3" -> "2016q4" ->
 		"2017q1" -> "2017q2" -> "2017q3" -> "2017q4" ->
-		"2018q1" -> "2018q2" -> "2018q3" -> "2018q4";
+		"2018q1" -> "2018q2" -> "2018q3" -> "2018q4" ->
+		"2019q1" -> "2019q2" -> "2019q3" -> "2019q4" ->
+		"2020q1";
 	}
 
 	{
@@ -37,6 +44,7 @@ digraph iogames {
 		{ rank=same; "2014q4"; "cursors.io" [label="\N\nMatheus Valadares"] }
 		{ rank=same; "2014q4"; "voar.io" [label="\N\nMatheus Valadares"] }
 		{ rank=same; "2015q2"; "agar.io" [label="\N\nMatheus Valadares"] } // https://en.wikipedia.org/wiki/Agar.io
+		{ rank=same; "2015q4"; "vertix.io" [label="\N\nSydney de Vries"] }
 		{ rank=same; "2016q1"; "slither.io" [label="\N\nSteve Howse"] } // https://en.wikipedia.org/wiki/Slither.io
 		{ rank=same; "2016q1"; "diep.io" [label="\N\nMatheus Valadares"] }
 		{ rank=same; "2016q1"; "wings.io" [label="\N\nAndre Almeida"] }
@@ -53,6 +61,8 @@ digraph iogames {
 		{ rank=same; "2016q3"; "drawthis.io" }
 		{ rank=same; "2016q3"; "bonk.io" [label="\N\nChaz"] }
 		{ rank=same; "2016q4"; "krew.io" [label="\N\nM0dE"] }
+		{ rank=same; "2016q4"; "starblast.io" [label="\N\nNeuronality"] }
+		{ rank=same; "2017q1"; "oib.io" [label="\N\nLapaMauve"] } // from the changelog, release date is Jan 21 2017
 		{ rank=same; "2017q1"; "brutal.io" [label="\N\nAndre Almeida"] }
 		{ rank=same; "2017q1"; "hexar.io" }
 		{ rank=same; "2017q1"; "pie.ai" }
@@ -77,11 +87,15 @@ digraph iogames {
 		{ rank=same; "2017q4"; "airma.sh" }
 		{ rank=same; "2018q1"; "shootem.io" [label="\N\nMathew Matakovic"] }
 		{ rank=same; "2018q1"; "knuckol.club" [label="\N\nErigato"] }
+		{ rank=same; "2018q1"; "nend.io" [label="\N\nLapaMauve"] } // February 17 2018 see http://nend.io/changelog/
 		{ rank=same; "2018q1"; "doomed2.io" [label="\N\nGinoda"] }
 		{ rank=same; "2018q2"; "tanksmith.io" [label="\N\nIO Ninja"] }
 		{ rank=same; "2018q2"; "drawthis2.io" [label="\N\nlagged.com"] }
 		{ rank=same; "2018q2"; "krunker.io" [label="\N\nSydney de Vries"] }
+		{ rank=same; "2018q3"; "microgravity.io" [label="\N\nNathan Flurry &\nNicholas Kissel"] }
 		{ rank=same; "2018q3"; "devast.io" [label="\N\nLapaMauve"] }
+		{ rank=same; "2018q4"; "acolytefight.io" [label="\N\nraysplaceinspace"] } // the Hacker News thread that gave it a big push at the beginning: https://news.ycombinator.com/item?id=17983325
+		{ rank=same; "2020q1"; "bonk2.io" [label="\N\nChaz"] } // it's a beta release with a separate https://bonk2.io/beta/ page but it counts. Based on what I can see from the Wayback Machine, it's possible it was released even earlier in 2019q4. But it may have been a closed beta because I was unable to find it when I tried to google it in early 2020q1
 	}
 
 	{
@@ -107,11 +121,13 @@ digraph iogames {
 	"moomoo.io" -> "starve.io" -> "devast.io";
 	"moomoo.io" -> "surviv.io";
 	"moomoo.io" -> "zombs.io" -> "zombsroyale.io" -> "buildroyale.io";
+	"vertix.io" -> "nightpoint.io"
 	"nightpoint.io" -> "battlepoint.io";
 	"nightpoint.io" -> "bruh.io";
 	"nightpoint.io" -> "shootem.io";
 	"bruh.io" -> "battlepoint.io";
 	"wilds.io" -> "wanderers.io";
+	"oib.io" -> "wanderers.io"
 	"agar.io" -> "spinz.io" -> "fisp.io";
 	"spinz.io" -> "superspin.io";
 	"agar.io" -> "pie.ai";
@@ -127,4 +143,6 @@ digraph iogames {
 	"goons.io" -> "knuckol.club"; // confirmed to me by Erigato over Discord
 	"airma.sh" -> "skyroyale.io";
 	// Erigato says Yang tweeted that he should hop into making battle royale games like surviv, but I haven't been able to find the tweet so I'm not adding this relationship yet. It's good to know that this is probable though.
+	"bonk.io" -> "bonk2.io";
+	"starblast.io" -> "microgravity.io";
 }
