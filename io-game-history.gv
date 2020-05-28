@@ -1,6 +1,6 @@
 digraph iogames {
     labelloc=t;
-    label=<<u><b>History of .io games</b></u><br/><br/>by <b>Julien Mourer</b><br/>Licensed under the CC BY 4.0<br/>https://github.com/getkey/io-game-history>;
+    label=<<font point-size="30"><u><b>History of .io games</b></u></font><br/><br/>by <b>Julien Mourer</b><br/>Licensed under the CC BY 4.0<br/>https://github.com/getkey/io-game-history>;
 
 	{
 		node [shape=none, color=white, fillcolor=white, fontsize=20, height=.5];
