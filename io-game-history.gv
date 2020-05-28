@@ -127,10 +127,19 @@ digraph iogames {
 		{ rank=same; "2018q4"; "buildroyale.io" [label="\N\nMathew Matakovic"] } // Mathew over Discord: "Build Royale was inspired by Creative Destruction"
 	}
 
+	// snake games
 	"slither.io" -> "wormax.io";
 	"slither.io" -> "wormate.io";
 	"slither.io" -> "limax.io";
 	"slither.io" -> "powerline.io";
+
+	// top-down(ish) shooters
+	"vertix.io" -> "nightpoint.io"
+	"nightpoint.io" -> "battlepoint.io";
+	"nightpoint.io" -> "bruh.io";
+	"nightpoint.io" -> "shootem.io";
+	"bruh.io" -> "battlepoint.io";
+
 	"deeeep.io" -> "oceanar.io";
 	"deeeep.io" -> "mope.io" -> "moomoo.io";
 	"moomoo.io" -> "foes.io";
@@ -138,34 +147,37 @@ digraph iogames {
 	"moomoo.io" -> "starve.io" -> "devast.io";
 	"moomoo.io" -> "surviv.io";
 	"moomoo.io" -> "zombs.io" -> "zombsroyale.io" -> "buildroyale.io";
-	"vertix.io" -> "nightpoint.io"
-	"nightpoint.io" -> "battlepoint.io";
-	"nightpoint.io" -> "bruh.io";
-	"nightpoint.io" -> "shootem.io";
-	"bruh.io" -> "battlepoint.io";
+	// Erigato says Yang tweeted that he should hop into making battle royale games like surviv, but I haven't been able to find the tweet so I'm not adding this relationship yet. It's good to know that this is probable though.
 	"wilds.io" -> "wanderers.io";
 	"oib.io" -> "wanderers.io"
 	"agar.io" -> "spinz.io" -> "fisp.io";
 	"spinz.io" -> "superspin.io";
 	"agar.io" -> "pie.ai";
-	"splix.io" -> "paper.io";
-	"splix.io" -> "hexar.io" -> "superhex.io";
 	"agar.io" -> "deeeep.io";
 	"diep.io" -> "tanksmith.io";
+	"bonk.io" -> "bonk2.io";
+	"flyordie.io" -> "llam.io";
+
+	// splix-likes
+	"splix.io" -> "paper.io";
+	"splix.io" -> "hexar.io" -> "superhex.io";
+
+	// 3D shooters
 	"warscrap.io" -> "krunker.io";
 	"shellshock.io" -> "krunker.io";
 
+	// pictionary
 	"pinturillo.com" -> "pinturillo2.com";
 	"pinturillo2.com" -> "drawthis.io";
 	"drawthis.io" -> "drawthis2.io";
 	"pinturillo2.com" -> "skribbl.io";
 	"pinturillo2.com" -> "gartic.io";
 
+	// dash kill games
 	"narwhale.io" -> "pikes.io" -> "goons.io";
 	"goons.io" -> "knuckol.club"; // confirmed to me by Erigato over Discord
 	"airma.sh" -> "skyroyale.io";
-	// Erigato says Yang tweeted that he should hop into making battle royale games like surviv, but I haven't been able to find the tweet so I'm not adding this relationship yet. It's good to know that this is probable though.
-	"bonk.io" -> "bonk2.io";
-	"starblast.io" -> "microgravity.io";
-	"flyordie.io" -> "llam.io";
+
+	// space shooters
+	"vanar.io" -> "starblast.io" -> "microgravity.io";
 }
