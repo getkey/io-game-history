@@ -41,14 +41,16 @@ digraph iogames {
 		"2020q1";
 	}
 
+	/* debattable, but usually not considered io games  */
 	{
-		node [color="#90caf9", style="rounded, filled", shape=box];
+		node [color="#E1FA91", style="rounded, filled", shape=box];
 
-		// honestly I'm not sure these 2 count since they are Flash and really old and I have no idea what they actully looked like at the time
-		// so not sure they can be considered "io games"
-		// however, they are necessary to understand the pictionary genetic tree
 		{ rank=same; "2009q3"; "pinturillo.com" }
 		{ rank=same; "2009q3"; "pinturillo2.com" }
+	}
+
+	{
+		node [color="#90caf9", style="rounded, filled", shape=box];
 
 		{ rank=same; "2014q4"; "cursors.io" [label="\N\nMatheus Valadares"] }
 		{ rank=same; "2014q4"; "voar.io" [label="\N\nMatheus Valadares"] }
@@ -115,7 +117,7 @@ digraph iogames {
 
 	{
 		/* Battle royale */
-		node [color="#fff176", style="rounded, filled", shape=box];
+		node [color="#FADC91", style="rounded, filled", shape=box];
 
 		{ rank=same; "2017q3"; "surviv.io" [label="\N\nJustin Kim &\n Nick Clark"] } // https://en.wikipedia.org/wiki/Surviv.io
 		{ rank=same; "2017q4"; "bruh.io" [label="\N\nBitfox Games"] }
