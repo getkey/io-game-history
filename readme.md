@@ -3,7 +3,8 @@
 ![History of .io games graph](io-game-history.svg)
 ![legend](legend.svg)
 
-This is a graph of the evolution of io games.
+This is a graph of the evolution of io games. It was inspired by [this diagram of the NetHack variants](https://nethackwiki.com/wiki/File:VariantHistoryGraph.jpg).
+
 Note that for simplicity sake, I am considering the games as they were at release. And by release I mean when they are publicly available on the web, even if the developer considers it "alpha" or "beta".
 
 Arrows represent **gameplay** "inspirations". Most of these are extrapolated, so please take them with a grain of salt.
