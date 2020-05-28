@@ -60,7 +60,8 @@ digraph iogames {
 		{ rank=same; "2016q3"; "splix.io" [label="\N\nJesper"] }
 		{ rank=same; "2016q3"; "drawthis.io" }
 		{ rank=same; "2016q3"; "bonk.io" [label="\N\nChaz"] }
-		{ rank=same; "2016q4"; "krew.io" [label="\N\nM0dE"] }
+		{ rank=same; "2016q3"; "hordes.io" [label="\N\ndek"] } // according to LapaMauve
+		{ rank=same; "2016q4"; "krew.io" [label="\N\nM0dE &\n dek"] }
 		{ rank=same; "2016q4"; "starblast.io" [label="\N\nNeuronality"] }
 		{ rank=same; "2017q1"; "oib.io" [label="\N\nLapaMauve"] } // from the changelog, release date is Jan 21 2017
 		{ rank=same; "2017q1"; "brutal.io" [label="\N\nAndre Almeida"] }
@@ -68,7 +69,7 @@ digraph iogames {
 		{ rank=same; "2017q1"; "pie.ai" }
 		{ rank=same; "2017q1"; "moomoo.io" [label="\N\nSydney de Vries"] }
 		{ rank=same; "2017q1"; "starve.io" [label="\N\nLapaMauve"] }
-		{ rank=same; "2017q1"; "skribbl.io" }
+		{ rank=same; "2017q1"; "skribbl.io" [label="\N\nmel"] }
 		{ rank=same; "2017q2"; "stabby.io" [label="\N\nSoulFoam"] }
 		{ rank=same; "2017q2"; "zombs.io" [label="\N\nYang Lui"] }
 		{ rank=same; "2017q2"; "spinz.io" [label="\N\nYang Lui"] }
@@ -85,6 +86,7 @@ digraph iogames {
 		{ rank=same; "2017q4"; "shellshock.io" }
 		{ rank=same; "2017q4"; "warscrap.io" [label="\N\nEvil Noob"] }
 		{ rank=same; "2017q4"; "airma.sh" }
+		{ rank=same; "2017q4"; "pockey.io" [label="\N\nStarcade\n(KidComet & al.)"] }
 		{ rank=same; "2018q1"; "shootem.io" [label="\N\nMathew Matakovic"] }
 		{ rank=same; "2018q1"; "knuckol.club" [label="\N\nErigato"] }
 		{ rank=same; "2018q1"; "nend.io" [label="\N\nLapaMauve"] } // February 17 2018 see http://nend.io/changelog/
