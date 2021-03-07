@@ -31,6 +31,7 @@ digraph iogames {
 		{ "2019q3" [label="Q3 2019"] }
 		{ "2019q4" [label="Q4 2019"] }
 		{ "2020q1" [label="Q1 2020"] }
+		{ "2020q2" [label="Q2 2020"] }
 
 		"2009q3" -> "2009q4" -> "2010q1" ->
 		"..." ->
@@ -40,7 +41,7 @@ digraph iogames {
 		"2017q1" -> "2017q2" -> "2017q3" -> "2017q4" ->
 		"2018q1" -> "2018q2" -> "2018q3" -> "2018q4" ->
 		"2019q1" -> "2019q2" -> "2019q3" -> "2019q4" ->
-		"2020q1";
+		"2020q1" -> "2020q2";
 	}
 
 	/* These game predate ".io games". However if they had been released in say 2018, they would have been considered as such. This is why I chose to include them.
@@ -114,9 +115,13 @@ digraph iogames {
 		{ rank=same; "2018q3"; "microgravity.io" [label="\N\nNathan Flurry &\nNicholas Kissel"] }
 		{ rank=same; "2018q3"; "devast.io" [label="\N\nLapaMauve"] }
 		{ rank=same; "2018q4"; "llam.io" [label="\N\nPixel Voices"] }
-		{ rank=same; "2018q4"; "acolytefight.io" [label="\N\nraysplaceinspace"] } // the Hacker News thread that gave it a big push at the beginning: https://news.ycombinator.com/item?id=17983325
+		{ rank=same; "2018q4"; "acolytefight.io" [label="\N\nraysplaceinspace"] } // ray confirmed to me the release date to be 2018-09-13 on Discord. The Hacker News thread that gave it a big push at the beginning is dated of that time as well: https://news.ycombinator.com/item?id=17983325
 		{ rank=same; "2020q1"; "bonk2.io" [label="\N\nChaz"] } // it's a beta release with a separate https://bonk2.io/beta/ page but it counts. Based on what I can see from the Wayback Machine, it's possible it was released even earlier in 2019q4. But it may have been a closed beta because I was unable to find it when I tried to google it in early 2020q1
 		{ rank=same; "2020q1"; "florr.io" [label="\N\nMatheus Valadares"] } // https://github.com/Matheus28/studio/commit/a46ce87ac0af5652e9fca11e82e898bb345d0b47
+		{ rank=same; "2020q1"; "tetr.io" [label="\N\nosk"] } // https://tetr.io/about/patchnotes/#chlog_1_0_0
+		{ rank=same; "2020q2"; "venge.io" [label="\N\nCem Demir"] } // https://forum.playcanvas.com/t/showcase-venge-io/13609
+		{ rank=same; "2016q4"; "doblons.io" [label="\N\nSydney de Vries"] } // http://doblons.io/changes.txt
+		{ rank=same; "2016q4"; "generals.io" [label="\N\nVictor Zhou"] } // http://generals.io/versions
 	}
 
 	{
@@ -160,6 +165,7 @@ digraph iogames {
 	"agar.io" -> "deeeep.io";
 	"diep.io" -> "tanksmith.io";
 	"diep.io" -> "florr.io";
+	"diep.io" -> "doblons.io";
 	"bonk.io" -> "bonk2.io";
 	"flyordie.io" -> "llam.io";
 
@@ -170,6 +176,7 @@ digraph iogames {
 	// 3D shooters
 	"warscrap.io" -> "krunker.io";
 	"shellshock.io" -> "krunker.io";
+	"krunker.io" -> "venge.io";
 
 	// pictionary
 	"pinturillo.com" -> "pinturillo2.com";
