@@ -8,7 +8,6 @@ digraph legend {
 
 	".io game" [color="#90caf9", style="rounded, filled", shape=box];
 	"not .io game\n(by modern standards)" [color="#E1FA91", style="rounded, filled", shape=box];
-	"battle royale .io game" [color="#FADC91", style="rounded, filled", shape=box];
 
 	a -> b [label="gameplay \"inspiration\""];
 }

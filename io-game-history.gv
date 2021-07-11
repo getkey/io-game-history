@@ -1,6 +1,7 @@
 digraph iogames {
     labelloc=t;
     label=<<font point-size="30"><u><b>History of .io games</b></u></font><br/><br/>by <b>Julien Mourer</b><br/>Licensed under the CC BY 4.0<br/>https://github.com/getkey/io-game-history>;
+	node [color="#90caf9", style="rounded, filled", shape=box];
 
 	{
 		node [shape=none, color=white, fillcolor=white, fontsize=20, height=.5];
@@ -46,7 +47,8 @@ digraph iogames {
 
 	/* These game predate ".io games". However if they had been released in say 2018, they would have been considered as such. This is why I chose to include them.
 	   I am uncertain about the exact release date of these very old games; this is my best approximation. */
-	{
+	subgraph not_io {
+		label = "not .io game\n(by modern standards)";
 		node [color="#E1FA91", style="rounded, filled", shape=box];
 
 		{ rank=same; "2009q3"; "pinturillo.com" }
@@ -55,7 +57,6 @@ digraph iogames {
 	}
 
 	{
-		node [color="#90caf9", style="rounded, filled", shape=box];
 
 		{ rank=same; "2014q4"; "cursors.io" [label="\N\nMatheus Valadares"] }
 		{ rank=same; "2014q4"; "voar.io" [label="\N\nMatheus Valadares"] }
@@ -124,9 +125,8 @@ digraph iogames {
 		{ rank=same; "2016q4"; "generals.io" [label="\N\nVictor Zhou"] } // http://generals.io/versions
 	}
 
-	{
-		/* Battle royale */
-		node [color="#FADC91", style="rounded, filled", shape=box];
+	subgraph cluster_battle_royale {
+		label = "Battle Royale";
 
 		{ rank=same; "2017q3"; "surviv.io" [label="\N\nJustin Kim &\n Nick Clark"] } // https://en.wikipedia.org/wiki/Surviv.io
 		{ rank=same; "2017q4"; "bruh.io" [label="\N\nBitfox Games"] }
@@ -136,18 +136,25 @@ digraph iogames {
 		{ rank=same; "2018q4"; "buildroyale.io" [label="\N\nMathew Matakovic"] } // Mathew over Discord: "Build Royale was inspired by Creative Destruction"
 	}
 
-	// snake games
-	"slither.io" -> "wormax.io";
-	"slither.io" -> "wormate.io";
-	"slither.io" -> "limax.io";
-	"slither.io" -> "powerline.io";
+	subgraph cluster_snake {
+		label = "Snake";
+
+		"slither.io" -> "wormax.io";
+		"slither.io" -> "wormate.io";
+		"slither.io" -> "limax.io";
+		"slither.io" -> "powerline.io";
+	}
 
 	// top-down(ish) shooters
-	"vertix.io" -> "nightpoint.io"
-	"nightpoint.io" -> "battlepoint.io";
-	"nightpoint.io" -> "bruh.io";
-	"nightpoint.io" -> "shootem.io";
-	"bruh.io" -> "battlepoint.io";
+	subgraph cluster_topdown_shooters {
+		label = "Top-down(ish) shooters";
+
+		"vertix.io" -> "nightpoint.io"
+		"nightpoint.io" -> "battlepoint.io";
+		"nightpoint.io" -> "bruh.io";
+		"nightpoint.io" -> "shootem.io";
+		"bruh.io" -> "battlepoint.io";
+	}
 
 	"deeeep.io" -> "oceanar.io";
 	"deeeep.io" -> "mope.io" -> "moomoo.io";
@@ -169,27 +176,42 @@ digraph iogames {
 	"bonk.io" -> "bonk2.io";
 	"flyordie.io" -> "llam.io";
 
-	// splix-likes
-	"splix.io" -> "paper.io";
-	"splix.io" -> "hexar.io" -> "superhex.io";
+	subgraph cluster_splixlikes {
+		label = "Splix-likes";
 
-	// 3D shooters
-	"warscrap.io" -> "krunker.io";
-	"shellshock.io" -> "krunker.io";
-	"krunker.io" -> "venge.io";
+		"splix.io" -> "paper.io";
+		"splix.io" -> "hexar.io" -> "superhex.io";
+	}
 
-	// pictionary
-	"pinturillo.com" -> "pinturillo2.com";
-	"pinturillo2.com" -> "drawthis.io";
-	"drawthis.io" -> "drawthis2.io";
-	"pinturillo2.com" -> "skribbl.io";
-	"pinturillo.com" -> "Gartic";
+	subgraph cluster_3d_shooters {
+		label = "3D shooters";
 
-	// dash kill games
-	"narwhale.io" -> "pikes.io" -> "goons.io";
-	"goons.io" -> "knuckol.club"; // confirmed to me by Erigato over Discord
-	"airma.sh" -> "skyroyale.io";
+		"warscrap.io" -> "krunker.io";
+		"shellshock.io" -> "krunker.io";
+		"krunker.io" -> "venge.io";
+	}
 
-	// space shooters
-	"vanar.io" -> "starblast.io" -> "microgravity.io";
+	subgraph cluster_pictionary {
+		label = "Pictionary";
+
+		"pinturillo.com" -> "pinturillo2.com";
+		"pinturillo2.com" -> "drawthis.io";
+		"drawthis.io" -> "drawthis2.io";
+		"pinturillo2.com" -> "skribbl.io";
+		"pinturillo.com" -> "Gartic";
+	}
+
+	subgraph cluster_dash {
+		label = "Dash";
+
+		"narwhale.io" -> "pikes.io" -> "goons.io";
+		"goons.io" -> "knuckol.club"; // confirmed to me by Erigato over Discord
+		"airma.sh" -> "skyroyale.io";
+	}
+
+	subgraph cluster_space {
+		label = "space shooters";
+
+		"vanar.io" -> "starblast.io" -> "microgravity.io";
+	}
 }
