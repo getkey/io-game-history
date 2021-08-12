@@ -69,7 +69,7 @@ digraph iogames {
 		{ rank=same; "2016q2"; "limax.io" [label="\N\nLapaMauve"] }
 		{ rank=same; "2016q2"; "wilds.io" [label="\N\nRezoner"] }
 		{ rank=same; "2016q3"; "wormax.io" [label="\N\nElyland"] }
-		{ rank=same; "2016q4"; "deeeep.io" }
+		{ rank=same; "2016q4"; "deeeep.io" [label="\N\nFederico Mouse"] }
 		{ rank=same; "2016q4"; "oceanar.io" [label="\N\nS3Games"] }
 		{ rank=same; "2016q4"; "mope.io" [label="\N\nStan Tatarnykov"] }
 		{ rank=same; "2016q4"; "wormate.io" [label="\N\nOleksandr Godoba"] }
@@ -157,7 +157,8 @@ digraph iogames {
 	}
 
 	"deeeep.io" -> "oceanar.io";
-	"deeeep.io" -> "mope.io" -> "moomoo.io";
+	"mope.io" -> "deeeep.io"; // see https://github.com/getkey/io-game-history/pull/2#issuecomment-882077331
+	"mope.io" -> "moomoo.io";
 	"moomoo.io" -> "foes.io";
 	"moomoo.io" -> "doomed.io" -> "doomed2.io";
 	"moomoo.io" -> "starve.io" -> "devast.io";
@@ -169,7 +170,7 @@ digraph iogames {
 	"agar.io" -> "spinz.io" -> "fisp.io";
 	"spinz.io" -> "superspin.io";
 	"agar.io" -> "pie.ai";
-	"agar.io" -> "deeeep.io";
+	"agar.io" -> "mope.io";
 	"diep.io" -> "tanksmith.io";
 	"diep.io" -> "florr.io";
 	"diep.io" -> "doblons.io";
